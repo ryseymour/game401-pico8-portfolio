@@ -57,6 +57,8 @@
     border-radius: 6px;
   }
   .play:hover { filter: brightness(1.08); }
+  .frame { max-width: 621px; }
+  .frame iframe { width: 100%; aspect-ratio: 621 / 513; border: 0; display: block; border-radius: 10px; background: #000; }
   footer { margin-top: 56px; color: var(--dim); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 20px; }
   footer a { color: var(--accent); }
 </style>
@@ -80,6 +82,16 @@
       </div>
     </article>
 
+  </div>
+
+  <h2 style="margin-top:48px">Same game, hosted on the BBS</h2>
+  <p style="color:var(--dim);max-width:60ch;margin:0 0 20px">
+    This is the route a student on the free education edition takes: publish the cart to
+    the Lexaloffle BBS, then paste the embed snippet here. No PICO-8 licence needed.
+  </p>
+  <div class="frame">
+    <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=neocitypet_demo"
+            allowfullscreen title="Brain in a Jar, playable"></iframe>
   </div>
 
   <footer>
